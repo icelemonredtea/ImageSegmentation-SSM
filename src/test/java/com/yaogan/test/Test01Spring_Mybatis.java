@@ -10,7 +10,7 @@ import com.yaogan.entity.Picture;
 import com.yaogan.mapper.PictureMapper;
 
 /**
- * 测试mybatis和spring的整合
+ * 测试mybatis和spring的整合dao层
  * @author ASUS
  *
  */

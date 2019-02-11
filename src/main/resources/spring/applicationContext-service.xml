@@ -14,7 +14,9 @@
 		<property name="mapperInterface" value="com.yaogan.mapper.PictureMapper"></property>
 	</bean>
 
-	
+	<bean id="pictureService" class="com.yaogan.service.imp.PictureServiceImp">
+		<property name="pictureMapper" ref="pictureMapper"></property>	
+	</bean>	
 
 	<!-- 配置Mapper扫描 -->
 	<!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
