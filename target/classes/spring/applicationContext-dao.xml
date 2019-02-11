@@ -20,7 +20,7 @@
 	</bean>
 
 	<!-- 配置SqlSessionFactory -->
-	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<bean class="org.mybatis.spring.SqlSessionFactoryBean">
 		<!-- 设置MyBatis核心配置文件 -->
 		<property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
 		<!-- 设置数据源 -->
@@ -30,11 +30,11 @@
 	<!-- <bean id="pictureMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="sqlSessionFactory" ref="sqlSessionFactoryBean"></property>
 		<property name="mapperInterface" value="com.yaogan.mapper.PictureMapper"></property>
-	</bean>
- -->
-	<!-- 配置Mapper扫描 -->
-	<!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		设置Mapper扫描包
-		<property name="basePackage" value="com.yaogan.mapper" />
 	</bean> -->
+ 	
+	<!-- 配置Mapper扫描 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 设置Mapper扫描包 -->
+		<property name="basePackage" value="com.yaogan.mapper" />
+	</bean>
 </beans>

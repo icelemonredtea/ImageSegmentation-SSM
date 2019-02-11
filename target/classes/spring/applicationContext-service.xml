@@ -8,19 +8,6 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
+	<context:component-scan base-package="com.yaogan.service"></context:component-scan>
 
-	<bean id="pictureMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="sqlSessionFactory" ref="sqlSessionFactoryBean"></property>
-		<property name="mapperInterface" value="com.yaogan.mapper.PictureMapper"></property>
-	</bean>
-
-	<bean id="pictureService" class="com.yaogan.service.imp.PictureServiceImp">
-		<property name="pictureMapper" ref="pictureMapper"></property>	
-	</bean>	
-
-	<!-- 配置Mapper扫描 -->
-	<!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		设置Mapper扫描包
-		<property name="basePackage" value="com.yaogan.mapper" />
-	</bean> -->
 </beans>
