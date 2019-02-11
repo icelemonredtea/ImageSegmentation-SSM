@@ -11,4 +11,12 @@
         <!-- 扫描@Controler  @Service   -->
         <context:component-scan base-package="com.yaogan"/>
         
+        <!-- 注解驱动处理器适配器，处理器映射器 -->
+        <mvc:annotation-driven></mvc:annotation-driven>
+        
+        <!-- 视图解析器 -->
+        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        	<property name="prefix" value="/WEB-INF/jsp/"></property>
+        	<property name="suffix" value=".jsp"></property>
+        </bean>
    </beans>
