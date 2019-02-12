@@ -65,10 +65,10 @@
 		<th>分割图像</th>
 	</tr>
 	<tr>
-	<td height="500px"><img alt="未加载" src="${pageContext.request.contextPath}/file/src/${uploadpictureFileName}"
+	<td height="500px"><img alt="未加载" src="${pageContext.request.contextPath}/upload/src/${uploadpictureFileName}"
 						width="800" height="460">
 	</td>
-	<td height="500px"><img alt="无图像" src="${pageContext.request.contextPath}/file/dest/${uploadpictureFileName}"
+	<td height="500px"><img alt="无图像" src="${pageContext.request.contextPath}/upload/dest/${uploadpictureFileName}"
 						width="800" height="460">
 	
 	</td>
