@@ -19,5 +19,7 @@ public interface PictureMapper {
 	//保存图片
 	void savePictureByQueryVo(QueryVo queryVo);
 
+	//删除
+	void deletePictureById(Integer id);
 
 }

@@ -29,7 +29,7 @@
 		<td>${list.content}</td>
 		<td>${list.uploadpictureFileName}</td>
 		<td>${list.uploadpictureContentType}</td>
-		<td><a href="${pageContext.request.contextPath}/deletePiture.action">删除</a></td>		
+		<td><a href="${pageContext.request.contextPath}/deletePiture.action?id=${list.id}">删除</a></td>		
 	</tr>
 	</c:forEach>
 	<tr>

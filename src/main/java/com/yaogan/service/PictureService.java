@@ -18,4 +18,6 @@ public interface PictureService {
 	//保存
 	public void savePictureByQueryVo(QueryVo queryVo);
 	
+	//删除
+	public void deletePictureById(Integer id);
 }

@@ -35,4 +35,10 @@ public class PictureServiceImp implements PictureService {
 		pictureMapper.savePictureByQueryVo(queryVo);
 	}
 
+	//删除
+	@Override
+	public void deletePictureById(Integer id) {
+		pictureMapper.deletePictureById(id);
+	}
+
 }

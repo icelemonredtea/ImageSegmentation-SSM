@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>主页</title>
 <script type="text/javascript">
+
+	//获取当前时间，组合成格式方便存入数据库，不需要格式转换器
 	function showtime() {
 		var date = new Date();
 		
@@ -34,6 +36,7 @@
 			return true;
 		}
 	}
+	
 	
 </script>
 </head>

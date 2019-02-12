@@ -47,7 +47,6 @@ public class PictureController {
 	public String savePicture(QueryVo queryVo, MultipartFile uploadpicture, 
 			HttpServletRequest request) throws Exception {
 		
-		System.out.println("开始执行保存操作");
 		//判断文件非空
 		if(uploadpicture.isEmpty()) {
 			return "error";
@@ -66,7 +65,7 @@ public class PictureController {
 		queryVo.getPicture().setContent(path);
 		//保存数据库
 		pictureService.savePictureByQueryVo(queryVo);
-		System.out.println("完成保存操作");
+		
 		return "redirect:/solution.action";
 	}
 	
@@ -74,9 +73,12 @@ public class PictureController {
 	
 	//删除记录
 	@RequestMapping(value="/deletePiture.action")
-	public String deletePictureById() {
+	public String deletePictureById(Integer id) {
+		
+		pictureService.deletePictureById(id);
 		
 		System.out.println("进行删除");
+		
 		return "redirect:/solution.action";
 	}
 	
