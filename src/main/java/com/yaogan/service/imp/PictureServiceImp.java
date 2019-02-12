@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.yaogan.entity.Picture;
+import com.yaogan.entity.QueryVo;
 import com.yaogan.mapper.PictureMapper;
 import com.yaogan.service.PictureService;
 
@@ -26,6 +27,12 @@ public class PictureServiceImp implements PictureService {
 	@Override
 	public List<Picture> findAllPictureByQueryVo() {
 		return pictureMapper.findAllPictureByQueryVo();
+	}
+
+	//保存图片
+	@Override
+	public void savePictureByQueryVo(QueryVo queryVo) {
+		pictureMapper.savePictureByQueryVo(queryVo);
 	}
 
 }

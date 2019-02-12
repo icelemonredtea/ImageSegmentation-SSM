@@ -9,4 +9,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select * from yaoganpicture;
 	</select>
 
+	<insert id="savePictureByQueryVo" parameterType="QueryVo">
+		INSERT INTO yaoganpicture (id,date,method,content,uploadpictureFileName,uploadpictureContentType)
+		 VALUES(#{picture.id},#{picture.date},#{picture.method},
+		 #{picture.content},#{picture.uploadpictureFileName},#{picture.uploadpictureContentType}); 
+	</insert>
+
 </mapper>

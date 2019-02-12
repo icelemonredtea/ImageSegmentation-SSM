@@ -21,7 +21,18 @@
 		var time = year+'-'+month+'-'+day+' '+hour+':'+minute+':'+second;
 		//alert( year+'-'+onth+'-'+day+' '+hour+':'+minute+':'+second);	
 	
-		document.getElementById("nowselect").value=time;
+		document.getElementById("time").value=time;
+	}
+	
+	//验证表单是否为空（时间和文件）
+	function checkForm(){
+		if (document.getElementById("time").value == "" || 
+				document.getElementById("upfile").value == "") {
+			alert("时间或文件未选取");
+			return false;
+		} else {
+			return true;
+		}
 	}
 	
 </script>
@@ -30,14 +41,16 @@
 <h1 align="center">遥感图像分割</h1>
 <a href="${pageContext.request.contextPath}/solution.action">进行处理</a>
 <div align="center">
-	<form action="${pageContext.request.contextPath}/savePicture.action" method="post" enctype="multipart/form-data">
-	当前时间：<select name="date" onchange="showtime()">
-				<option>----请选择选择时间----</option>
-				<option id="nowselect" value="">当前时间</option>
-			 </select><br/><br/>
-	分割类型：<input type="radio" name="method" value="K-means" checked="checked"/>K均值分割
-		   <input type="radio" name="method" value="xxx"/>xxx分割<br/><br/>
-	上传图片：<input type="file" name="uploadpicture" style="color: red"><br/><br/>
+	<form action="${pageContext.request.contextPath}/savePicture.action" method="post" 
+	enctype="multipart/form-data" onsubmit="return checkForm()">
+	提交时间：<input type="text" id="time" name="picture.date" readonly="readonly"/>
+		   <input type="button" value="获取当前时间" onclick="showtime()"/>
+		   <br/><br/>
+	分割类型：<input type="radio" name="picture.method" value="K-means" checked="checked"/>K均值分割
+		   <input type="radio" name="picture.method" value="xxx"/>xxx分割
+		   <br/><br/>
+	上传图片：<input type="file" id="upfile" name="uploadpicture" style="color: red">
+		   <br/><br/>
 		<input type="submit"/>
 		<input type="reset"/> 
 	</form>

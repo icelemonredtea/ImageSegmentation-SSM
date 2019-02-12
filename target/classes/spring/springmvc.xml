@@ -14,6 +14,14 @@
         <!-- 注解驱动处理器适配器，处理器映射器 -->
         <mvc:annotation-driven></mvc:annotation-driven>
         
+        <!-- 释放静态资源 -->
+        <mvc:resources location="/upload/" mapping="/upload/**"/>
+        
+        <!-- 文件上传解析器 -->
+        <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        	<!-- 设置上传大小 -->
+        </bean>
+        
         <!-- 视图解析器 -->
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         	<property name="prefix" value="/WEB-INF/jsp/"></property>
