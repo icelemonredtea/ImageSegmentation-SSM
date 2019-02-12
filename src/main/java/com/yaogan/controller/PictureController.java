@@ -23,6 +23,7 @@ public class PictureController {
 	private PictureService pictureService;
 	
 	
+	//查询所有记录
 	@RequestMapping(value="/solution.action")
 	public String itemList(Model model ) {
 		
@@ -31,5 +32,17 @@ public class PictureController {
 		
 		return "solution";
 	}
+	
+	
+	
+	
+	
+	//删除记录
+	@RequestMapping(value="/delete.action")
+	public String deletePictureById() {
+		
+		return "redirect:/solution.action";
+	}
+	
 	
 }
