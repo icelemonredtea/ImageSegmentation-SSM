@@ -2,13 +2,14 @@ package com.yaogan.algorithm.kmeans;
 
 /**
  * 调用算法，传入src与des以及格式后，进行算法分割。
- * 其中考虑到TIFF图像无法直接进处理，通过jai扩展image功能，实现tiff读取转换成jpeg格式，分割完成在转回tiff格式
+ * 其中考虑到TIFF图像无法直接进处理，通过jai扩展image功能，实现tiff读取转换成jpeg格式，分割完成在转回tiff格式。
+ * 返回图片格式：非tif格式将原格式返回，tif格式返回jpeg格式。
  * @author ASUS
  *
  */
 public class K_meansAlgorithm {
 
-	public void runAlgorithm(String srcpath, String despath, String format) {
+	public String runAlgorithm(String srcpath, String despath, String format) {
 		String src = srcpath;
 		String des = despath;
 		//判断是否为tiff图像标志。
@@ -35,7 +36,10 @@ public class K_meansAlgorithm {
 		if (isTiff) {
 			//将分割后jpeg文件转后相应的tiff文件。
 			TransformFormat.format(des, despath, "JPEG");
+			return "jpeg";
 		}
+		
+		return format;
 	}
 	
 }
