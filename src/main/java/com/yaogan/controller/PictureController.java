@@ -31,6 +31,13 @@ public class PictureController {
 	@Autowired
 	private PictureService pictureService;
 
+	//进入图片上传页面
+	@RequestMapping(value="/pictureSetting.action")
+	public String pictureSetting() {
+		return "/WEB-INF/jsp/pictureSetting.jsp";
+	}
+	
+	
 	// 查询所有记录
 	@RequestMapping(value = "/findAllPicture.action")
 	public String itemList(Model model) {
@@ -85,7 +92,7 @@ public class PictureController {
 		
 		model.addAttribute("fileName", fileName);
 		
-		return "index.jsp";
+		return "/WEB-INF/jsp/pictureSetting.jsp";
 	}
 
 	// 删除记录

@@ -1,6 +1,11 @@
-D:\java\workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\entity\QueryVo.java
-D:\java\workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\controller\PictureController.java
-D:\java\workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\service\PictureService.java
-D:\java\workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\service\imp\PictureServiceImp.java
-D:\java\workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\mapper\PictureMapper.java
-D:\java\workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\entity\Picture.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\mapper\PictureMapper.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\algorithm\kmeans\dataItem.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\algorithm\kmeans\ImageCluster.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\algorithm\kmeans\K_meansAlgorithm.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\service\PictureService.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\controller\PictureController.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\entity\Picture.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\algorithm\kmeans\Test.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\algorithm\kmeans\TransformFormat.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\service\imp\PictureServiceImp.java
+D:\java\git-workspace\ImageSegmentation-SSM\src\main\java\com\yaogan\entity\QueryVo.java

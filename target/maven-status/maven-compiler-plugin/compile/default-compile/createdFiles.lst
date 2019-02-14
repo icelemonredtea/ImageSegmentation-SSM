@@ -1,6 +1,11 @@
+com\yaogan\algorithm\kmeans\TransformFormat.class
+com\yaogan\algorithm\kmeans\dataItem.class
 com\yaogan\service\imp\PictureServiceImp.class
 com\yaogan\entity\Picture.class
 com\yaogan\service\PictureService.class
+com\yaogan\algorithm\kmeans\K_meansAlgorithm.class
 com\yaogan\controller\PictureController.class
 com\yaogan\mapper\PictureMapper.class
+com\yaogan\algorithm\kmeans\ImageCluster.class
 com\yaogan\entity\QueryVo.class
+com\yaogan\algorithm\kmeans\Test.class

@@ -75,7 +75,9 @@
 								${list.uploadpictureContentType}
 							</th>
 							<th>
-								<a href="${pageContext.request.contextPath}/deletePiture.action?id=${list.id}">删除</a>
+								<a href="${pageContext.request.contextPath}/deletePiture.action?id=${list.id}">
+									<button type="button" class="btn  btn-danger">删除</button>
+								</a>
 							</th>
 						</tr>
 					</c:forEach>	
@@ -85,7 +87,7 @@
 	</div>
 	<div class="row clearfix">
 		<div class="col-md-8 ">
-		<a href="${pageContext.request.contextPath}/index.jsp">
+		<a href="${pageContext.request.contextPath}/pictureSetting.action">
 				<button type="button" class="btn btn-default btn-primary">返回主页</button>
 		</a>
 		</div>
