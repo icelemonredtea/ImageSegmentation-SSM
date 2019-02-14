@@ -71,6 +71,14 @@ public class PictureController {
 		// 获取根目录吗，再获取图片的保存src和分割des地址。
 		String srcpath = request.getSession().getServletContext().getRealPath("/upload/src");
 		String despath = request.getSession().getServletContext().getRealPath("/upload/des");
+		File srcdir = new File(srcpath);//srcfile文件夹
+		File desdir = new File(despath);//desfile文件夹
+        if(!srcdir.exists()) {//如果未创建则新建
+             srcdir.mkdirs();	
+             if (!desdir.exists()) {
+				desdir.mkdir();
+			}
+        }
 		src = srcpath + "/" + name + "." + extension;
 		des = despath + "/" + name + "." + extension;
 		// 保存图片
