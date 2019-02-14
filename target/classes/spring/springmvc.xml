@@ -17,6 +17,7 @@
         <!-- 释放静态资源 -->
         <mvc:resources location="/upload/" mapping="/upload/**"/>
         <mvc:resources location="/bootstrap/" mapping="/bootstrap/**"/>
+        <mvc:resources location="/img/" mapping="/img/**"/>
         
         <!-- 文件上传解析器 -->
         <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
