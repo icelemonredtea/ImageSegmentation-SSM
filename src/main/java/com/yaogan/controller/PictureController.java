@@ -32,13 +32,13 @@ public class PictureController {
 	private PictureService pictureService;
 
 	// 查询所有记录
-	@RequestMapping(value = "/solution.action")
+	@RequestMapping(value = "/findAllPicture.action")
 	public String itemList(Model model) {
 
 		List<Picture> pictures = pictureService.findAllPictureByQueryVo();
 		model.addAttribute("pictures", pictures);
 
-		return "/WEB-INF/jsp/solution.jsp";
+		return "/WEB-INF/jsp/list.jsp";
 	}
 
 	// 保存记录
@@ -94,7 +94,7 @@ public class PictureController {
 
 		pictureService.deletePictureById(id);
 
-		return "redirect:/solution.action";
+		return "redirect:/findAllPicture.action";
 	}
 
 	// 分割算法选择

@@ -42,7 +42,7 @@
 </head>
 <body>
 <h1 align="center">遥感图像分割</h1>
-<a href="${pageContext.request.contextPath}/solution.action">进行处理</a>
+<a href="${pageContext.request.contextPath}/findAllPicture.action">进行处理</a>
 <div align="center">
 	<form action="${pageContext.request.contextPath}/savePicture.action" method="post" 
 	enctype="multipart/form-data" onsubmit="return checkForm()">
