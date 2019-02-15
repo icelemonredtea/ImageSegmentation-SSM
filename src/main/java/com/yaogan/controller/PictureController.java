@@ -100,7 +100,7 @@ public class PictureController {
 		
 		model.addAttribute("fileName", fileName);
 		
-		return "/WEB-INF/jsp/pictureSetting.jsp";
+		return "/WEB-INF/jsp/pictureList.jsp";
 	}
 
 	// 删除记录

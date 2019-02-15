@@ -79,7 +79,7 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="text-align: center;">
                 <div class="widget">
                     <h4 class="title">友情链接</h4>
                     <div class="content tag-cloud friend-links">
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="text-align: center;">
                 <div class="widget">
                     <h4 class="title">我用到的技术</h4>
                     <div class="content tag-cloud">
