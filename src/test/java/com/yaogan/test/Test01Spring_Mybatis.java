@@ -19,6 +19,7 @@ public class Test01Spring_Mybatis {
 
 	@Test
 	public void test1() {
+		@SuppressWarnings("resource")
 		ApplicationContext applicationContext = 
 				new ClassPathXmlApplicationContext("spring/applicationContext.xml");
 		PictureMapper pictureMapper = applicationContext.getBean(PictureMapper.class);

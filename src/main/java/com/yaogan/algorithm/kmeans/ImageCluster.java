@@ -172,15 +172,15 @@ public class ImageCluster {
 			}
 	}
 	//进行kmeans计算的核心函数
-	public void kmeans(String srcpath, String destpath,int k,int m){
+	public void kmeans(String srcpath, String destpath,int k_point,int m_number){
 		source=InitData(getImageData(srcpath));
 		/*测试输出
 		for(int i=0;i<source.length;i++)
 			for(int j=0;j<source[0].length;j++)
 				System.out.println("("+source[i][j].x+","+source[i][j].y+","+source[i][j].r+","+source[i][j].g+","+source[i][j].b+")");
 		*/
-		this.k=k;
-		this.m=m;
+		this.k=k_point;
+		this.m=m_number;
 		//初始化聚类中心
 		initCenters(k);
 		/*测试输出
