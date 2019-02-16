@@ -19,6 +19,9 @@
         <mvc:resources location="/bootstrap/" mapping="/bootstrap/**"/>
         <mvc:resources location="/img/" mapping="/img/**"/>
         
+        <!-- SpringMvc异常处理器 -->
+        <bean class="com.yaogan.exception.PictureException"></bean>
+        
         <!-- 文件上传解析器 -->
         <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         	<!-- 设置上传大小 -->
